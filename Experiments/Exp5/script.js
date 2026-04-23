@@ -61,3 +61,27 @@ let evenNumber = [1,2,3,4,5];
 let filteredEvenNumbers= evenNumber.
 filter(num => num %2 ===0);
 console.log(filteredEvenNumbers);
+
+let sum =[1,2,3,4,5];
+let total = sum.reduce((accumulator, currentValue)=>accumulator+currentValue,0);
+console.log(total);
+
+let students= [
+    {name:"Alice",marks:85},
+    {name:"Bob",marks:92},
+    {name:"Charlie",marks:78}
+];
+
+let marks = students.map(student =>student.marks);
+console.log(marks);
+
+let names = students.map(student => student.name);
+console.log(names);
+
+let topStudents = students.filter
+(students=> students.marks>80);
+console.log(topStudents);
+
+let totalMarks = students.reduce
+((acc,student) => acc + student.marks,0);
+console.log(totalMarks);
