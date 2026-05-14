@@ -65,17 +65,26 @@ function App() {
       <button style={{
       height : 50,
       width : 150 ,
-       backgroundColor : "black",
+       
       color : "white",
       background : "white",
       border : "none",
       borderRadius : 5,
-      fontSize :20
+      fontSize :20,
+      backgroundColor : "black",
 
 
 
     }}onClick={()=>{
-      setCount(count-1)
+
+      
+      if(count!=0){
+        
+        setCount(count-1);
+      }
+
+      
+    
     }}>Decrease</button>
     </div>
 
