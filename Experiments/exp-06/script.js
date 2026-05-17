@@ -82,6 +82,7 @@ function showHide(){
 function reset(){
 
     display.innerHTML = originalText
+    input.value = ""
 
 }
 
