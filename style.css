@@ -1,0 +1,248 @@
+body{
+
+    padding: 0;
+    margin : 0;
+    box-sizing: border-box;
+    
+    background: #0f172a;
+    color: white;
+
+    
+    
+}
+
+html,body{
+
+    height: 100vh;
+    
+}
+
+.title {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: dimgray;
+   
+
+
+}
+
+.title h1{
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 600;
+
+    
+
+  
+}
+
+.img{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+
+.img{
+
+     transition: transform  0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+
+}
+
+.img :hover{
+
+    
+    transform: scale3d(1.02, 1.02, 1.02);
+}
+
+
+
+
+
+.pic{
+
+    height: 270px;
+    width:270px;
+    border: 5px solid rgb(239, 197, 156);
+    box-shadow: 0 0 30px rgb(228, 135, 95);
+    border-radius:50%;
+    object-fit: cover;
+    object-position: center;
+
+
+    
+   
+}
+
+.name{
+
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: dimgray;
+    font-size: 23px;
+    font-weight: 400;
+   
+
+}
+
+
+
+
+
+.boxes{
+
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+   
+   justify-content: center;
+   align-items: center;
+
+   gap: 40px;
+   margin: 40px;
+ 
+    
+   
+}
+
+
+
+
+ 
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid pink;
+    padding : 10px;
+    box-shadow: 0 0 20px rgb(224, 164, 214);
+     border  :  1px solid rgb(197, 111, 181);
+       
+
+
+
+}
+
+.skills{
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgb(161, 225, 108);
+    padding : 10px;
+    box-shadow: 0 0 20px rgb(175, 237, 184);
+       
+
+
+
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skills li {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 14px 20px;
+
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(243, 238, 238);
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.skills li:hover {
+    transform: translateX(10px);
+    background: rgba(0, 255, 255, 0.15);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+
+
+.inspire{
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgb(116, 138, 236);
+    padding : 10px;
+    box-shadow: 0 0 20px rgb(111, 165, 245);
+       
+
+
+
+}
+
+.inspire ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inspire li {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 14px 20px;
+
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(255, 252, 252);
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.inspire li:hover {
+    transform: translateX(10px);
+    background: rgba(0, 255, 255, 0.15);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.about,
+.skills,
+.inspire,
+.books {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.about:hover,
+.skills:hover,
+.inspire:hover,
+.books:hover {
+    transform: translateY(-10px);
+   
+}
+
+
+
+
+
+
