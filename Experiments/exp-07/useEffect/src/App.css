@@ -1,0 +1,29 @@
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+}
+
+input{
+  padding: 10px;
+  font-size: 16px;
+}
+
+button{
+  padding: 10px;
+  cursor: pointer;
+}
+
+p{
+  color: red;
+  margin: 0;
+}

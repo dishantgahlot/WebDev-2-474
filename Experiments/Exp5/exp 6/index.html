@@ -1,0 +1,310 @@
+!DOCTYPE html>
+<htm<l lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- CRITICAL: Makes layout work correctly on mobile -->
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+
+  <title>FitLife - Transform Your Body</title>
+
+  <!-- Tailwind CSS via CDN (no npm/build needed) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Your sections go here -->
+
+  <header class="bg-blue-700 text-white shadow-lg">
+  <div class="
+    max-w-6xl      /* Limit width to 72rem on large screens */
+    mx-auto        /* Center horizontally */
+    px-6           /* Padding left+right: 1.5rem */
+    py-4           /* Padding top+bottom: 1rem */
+    flex           /* Enable flexbox */
+    flex-col       /* Default (mobile): stack vertically */
+    md:flex-row    /* md+: arrange horizontally */
+    items-center   /* Vertically center items */
+    gap-4          /* Space between brand & nav: 1rem */
+  ">
+
+    <!-- Brand Name -->
+    <h1 class="text-3xl font-extrabold tracking-wide">
+      FitLife
+    </h1>
+
+    <!-- Navigation -->
+    <nav class="
+      flex           /* Nav items in a row */
+      flex-col       /* Mobile: stack nav links */
+      md:flex-row    /* md+: nav links in a row */
+      items-center
+      gap-2
+      md:gap-6
+      md:ml-auto    /* Push nav to the right on desktop */
+    ">
+      <a href="#home"
+         class="hover:text-yellow-300 transition duration-200
+                font-semibold text-sm md:text-base">
+        Home
+      </a>
+      <a href="#programs"
+         class="hover:text-yellow-300 transition duration-200
+                font-semibold text-sm md:text-base">
+        Programs
+      </a>
+      <a href="#trainers"
+         class="hover:text-yellow-300 transition duration-200
+                font-semibold text-sm md:text-base">
+        Trainers
+      </a>
+      <a href="#contact"
+         class="hover:text-yellow-300 transition duration-200
+                font-semibold text-sm md:text-base">
+        Contact
+      </a>
+    </nav>
+  </div>
+</header>
+
+<section id="home" class="
+  bg-gradient-to-br    /* Diagonal gradient top-left → bottom-right */
+  from-blue-900        /* Start color: very dark blue */
+  via-blue-700         /* Middle color: medium blue */
+  to-indigo-800        /* End color: indigo */
+  text-white
+  min-h-screen         /* At least full viewport height */
+  flex                 /* Flexbox to center content */
+  flex-col
+  items-center         /* Horizontal center */
+  justify-center       /* Vertical center */
+  px-6
+  py-20
+  text-center
+">
+  <!-- Badge -->
+  <span class="
+    bg-yellow-400 text-gray-900 font-bold
+    text-sm uppercase tracking-widest
+    px-4 py-1 rounded-full mb-6"
+  >
+    #1 Fitness Program
+  </span>
+
+  <!-- Main Heading -->
+  <h2 class="
+    text-4xl          /* Mobile: 2.25rem (36px) */
+    md:text-6xl       /* Tablet+: 3.75rem (60px) */
+    lg:text-7xl       /* Desktop: 4.5rem (72px) */
+    font-extrabold
+    leading-tight     /* line-height: 1.25 */
+    mb-6
+  ">
+    Transform Your
+    <span class="text-yellow-400">Body,</span>
+    <br/>
+    Elevate Your Life
+  </h2>
+
+  <!-- Description -->
+  <p class="
+    text-lg md:text-xl
+    text-blue-200
+    max-w-2xl         /* Limit paragraph width for readability */
+    mb-10
+    leading-relaxed   /* Comfortable line spacing */
+  ">
+    Join FitLife and discover personalized training plans,
+    expert coaches, and a community that pushes you to be your
+    best. Start your transformation today.
+  </p>
+
+  <!-- CTA Button -->
+  <a href="#programs" class="
+    bg-yellow-400      /* Bright yellow button */
+    text-gray-900      /* Dark text for contrast */
+    font-bold
+    text-lg
+    px-10 py-4         /* Large clickable area */
+    rounded-full       /* Pill shape */
+    hover:bg-yellow-300
+    hover:scale-105    /* Slight grow on hover */
+    transition duration-300
+    shadow-xl
+    inline-block
+  ">
+    Join Now &rarr;
+  </a>
+
+  <!-- Scroll hint -->
+  <p class="mt-16 text-blue-300 text-sm animate-bounce">
+    ↓ Scroll to explore
+  </p>
+</section>
+<section id="programs" class="py-20 px-6 bg-gray-50">
+  <div class="max-w-6xl mx-auto">
+
+    <!-- Section Header -->
+    <div class="text-center mb-14">
+      <h2 class="text-3xl md:text-5xl font-extrabold text-gray-800 mb-4">
+        Our Programs
+      </h2>
+      <p class="text-gray-500 text-lg max-w-xl mx-auto leading-relaxed">
+        Expert-designed programs for every fitness level
+      </p>
+    </div>
+
+    <!-- RESPONSIVE GRID: 1 col → 2 col → 3 col -->
+    <div class="
+      grid             /* CSS Grid */
+      grid-cols-1      /* Mobile: 1 column */
+      md:grid-cols-2   /* Tablet (768px+): 2 columns */
+      lg:grid-cols-3   /* Desktop (1024px+): 3 columns */
+      gap-8            /* 2rem gap between cards */
+    ">
+
+      <!-- ── CARD 1: Weight Training ──────────── -->
+      <div class="
+        bg-white rounded-2xl shadow-md
+        hover:shadow-xl hover:-translate-y-2
+        transition duration-300
+        overflow-hidden
+        border border-gray-100
+      ">
+        <!-- Card Top Bar (accent color) -->
+        <div class="bg-blue-600 p-6 text-white">
+          <span class="text-5xl">🏋️</span>
+          <h3 class="text-xl font-bold mt-3">Weight Training</h3>
+        </div>
+        <!-- Card Body -->
+        <div class="p-6">
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Build strength, increase muscle mass, and boost metabolism
+            with our structured resistance training programs.
+          </p>
+          <ul class="text-sm text-gray-500 space-y-2">
+            <li>✓ Beginner to Advanced</li>
+            <li>✓ Free weights & machines</li>
+            <li>✓ Personal form coaching</li>
+          </ul>
+          <button class="mt-6 w-full bg-blue-600 text-white
+                          py-2 rounded-lg font-semibold
+                          hover:bg-blue-700 transition">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <!-- ── CARD 2: Yoga Classes ──────────────── -->
+      <div class="bg-white rounded-2xl shadow-md
+                  hover:shadow-xl hover:-translate-y-2
+                  transition duration-300 overflow-hidden
+                  border border-gray-100">
+        <div class="bg-purple-600 p-6 text-white">
+          <span class="text-5xl">🧘</span>
+          <h3 class="text-xl font-bold mt-3">Yoga Classes</h3>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Improve flexibility, reduce stress, and find inner balance
+            with certified yoga instructors.
+          </p>
+          <ul class="text-sm text-gray-500 space-y-2">
+            <li>✓ Hatha, Vinyasa & Yin styles</li>
+            <li>✓ Morning & evening batches</li>
+            <li>✓ Props provided</li>
+          </ul>
+          <button class="mt-6 w-full bg-purple-600 text-white
+                          py-2 rounded-lg font-semibold
+                          hover:bg-purple-700 transition">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <!-- ── CARD 3: Diet Plans ────────────────── -->
+      <div class="bg-white rounded-2xl shadow-md
+                  hover:shadow-xl hover:-translate-y-2
+                  transition duration-300 overflow-hidden
+                  border border-gray-100">
+        <div class="bg-green-600 p-6 text-white">
+          <span class="text-5xl">🥗</span>
+          <h3 class="text-xl font-bold mt-3">Diet Plans</h3>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Fuel your performance with customized nutrition plans
+            designed by certified dietitians.
+          </p>
+          <ul class="text-sm text-gray-500 space-y-2">
+            <li>✓ Calorie-tracked meal plans</li>
+            <li>✓ Veg & non-veg options</li>
+            <li>✓ Weekly check-ins</li>
+          </ul>
+          <button class="mt-6 w-full bg-green-600 text-white
+                          py-2 rounded-lg font-semibold
+                          hover:bg-green-700 transition">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+    </div> <!-- end grid -->
+  </div>
+</section>
+<footer id="contact" class="bg-gray-900 text-white py-12 px-6">
+  <div class="max-w-6xl mx-auto
+              grid grid-cols-1 md:grid-cols-3 gap-10">
+
+    <!-- Column 1: Brand -->
+    <div>
+      <h3 class="text-2xl font-extrabold mb-3 text-yellow-400">
+        FitLife
+      </h3>
+      <p class="text-gray-400 leading-relaxed text-sm">
+        Empowering people to reach their fitness goals through
+        science-backed training and nutrition.
+      </p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div>
+      <h4 class="font-bold text-lg mb-3 text-gray-200">
+        Quick Links
+      </h4>
+      <ul class="space-y-2 text-gray-400 text-sm">
+        <li><a href="#home"     class="hover:text-white transition">Home</a></li>
+        <li><a href="#programs" class="hover:text-white transition">Programs</a></li>
+        <li><a href="#trainers" class="hover:text-white transition">Trainers</a></li>
+        <li><a href="#contact"  class="hover:text-white transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Contact Info -->
+    <div>
+      <h4 class="font-bold text-lg mb-3 text-gray-200">
+        Contact Us
+      </h4>
+      <address class="not-italic text-gray-400 text-sm space-y-2">
+        <p>📧 hello@fitlife.com</p>
+        <p>📞 +91 98765 43210</p>
+        <p>📍 Sector 18, Noida, UP, India</p>
+      </address>
+    </div>
+  </div>
+
+  <!-- Copyright bar -->
+  <div class="
+    border-t border-gray-700
+    mt-10 pt-6
+    text-center text-gray-500 text-sm
+  ">
+    &copy; 2025 FitLife. All rights reserved.
+    Built with Tailwind CSS.
+  </div>
+</footer>
+
+
+</body>
+</html>
